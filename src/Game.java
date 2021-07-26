@@ -39,8 +39,8 @@ public class Game {
     @Override
     public String toString() {
         return "Game " +
-                "person=" + person +
-                ", dog=" + dog +
-                ", vet=" + vet;
+                person + " "
+              +   dog + " "
+               +  vet;
     }
 }

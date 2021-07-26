@@ -1,13 +1,23 @@
 public class Dog extends Animal{
 
     public Dog(){}
-    public Dog(String nameAnimal){
-        super(nameAnimal);
+    public Dog(String nameAnimal, String color, int age){
+        super(nameAnimal, color, age);
     }
 
     @Override
     public void eating() {
-        System.out.println(getNameAnimal() + " is eating.");
+        System.out.println(getNameAnimal() + " of color " + getColor() + " is eating.");
+    }
+
+    @Override
+    public void sleeping() {
+        System.out.println(getNameAnimal() + " is sleeping");
+    }
+
+    @Override
+    public void running() {
+        System.out.println(getNameAnimal() + " is running");
     }
 
     @Override

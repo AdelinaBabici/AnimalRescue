@@ -1,3 +1,5 @@
+import java.time.LocalDate;
+
 public class Main {
     public static void main(String[] args) {
 
@@ -21,14 +23,15 @@ public class Main {
         person.setAmount(20);
 
         food.setNameFood("meat");
-        food.setDateOfExp(12);
+        food.setDateOfExp(LocalDate.of(2021,12,19));
         food.setInStock(true);
         food.setPrice(200);
         food.setQuantity(45);
+        System.out.println(food.getDateOfExp());
 
         activity.setNameActivity("running");
 
-        vet.setNameVet("Ben");
+        vet.setNamePerson("Ben");
         vet.setSpecialization("Vet");
 
         dog.setNameAnimal("lup");
@@ -40,11 +43,22 @@ public class Main {
 
         game.setDog(dog);
         System.out.println(game.getDog());
+        game.setPerson(person);
+        game.setVet(vet);
+        System.out.println(game.toString());
 
         System.out.println(animal.getNameAnimal() + " are " + animal.getAge() + " ani");
 
         dog.setNameAnimal("Rex");
+        dog.setColor("Brown");
         dog.eating();
+        dog.sleeping();
+        dog.running();
+
+      vet.beingHappy();
+      vet.treating();
+
+      person.beingHappy();
 
     }
 }

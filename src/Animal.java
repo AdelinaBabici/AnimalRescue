@@ -11,11 +11,29 @@ public class Animal {
     private int weight;
     private String color;
 
+    public int getWeight() {
+        return weight;
+    }
+
+    public void setWeight(int weight) {
+        this.weight = weight;
+    }
+
+    public String getColor() {
+        return color;
+    }
+
+    public void setColor(String color) {
+        this.color = color;
+    }
+
     public Animal(){
 
     }
-    public Animal(String nameAnimal){
+    public Animal(String nameAnimal, String color, int age){
         this.nameAnimal = nameAnimal;
+        this.color  = color;
+        this.age = age;
     }
     public void eating(){}
     public void sleeping(){}

@@ -1,13 +1,18 @@
-public class Person {
-    private String namePerson;
+public class Person extends Human {
+
     private int amount;
 
-    public String getNamePerson() {
-        return namePerson;
+    public Person(String namePerson) {
+        super(namePerson);
+    }
+    public Person(){
+        super();
     }
 
-    public void setNamePerson(String namePerson) {
-        this.namePerson = namePerson;
+
+    @Override
+    public void beingHappy() {
+        System.out.println(getNamePerson() + " is being happy about adoption");
     }
 
     public int getAmount() {
@@ -16,5 +21,12 @@ public class Person {
 
     public void setAmount(int amount) {
         this.amount = amount;
+    }
+
+    @Override
+    public String toString() {
+        return  "namePerson='" + getNamePerson() + '\'' +
+                ", amount=" + amount +
+                '}';
     }
 }

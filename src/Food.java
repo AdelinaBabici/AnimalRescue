@@ -1,8 +1,12 @@
+
+import java.time.LocalDate;
+
+
 public class Food {
     private String nameFood;
     private double price;
     private int quantity;
-    private int dateOfExp;
+    private LocalDate dateOfExp;
     private boolean inStock;
 
 
@@ -34,11 +38,11 @@ public class Food {
         this.quantity = quantity;
     }
 
-    public int getDateOfExp() {
+    public LocalDate getDateOfExp() {
         return dateOfExp;
     }
 
-    public void setDateOfExp(int dateOfExp) {
+    public void setDateOfExp(LocalDate dateOfExp) {
         this.dateOfExp = dateOfExp;
     }
 
