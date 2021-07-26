@@ -35,7 +35,7 @@ public abstract class Animal {
         this.color  = color;
         this.age = age;
     }
-    public abstract void eating();
+    public abstract void eating(DogFood dogFood);
     public abstract void sleeping();
     public abstract void running();
     public abstract void speak();

@@ -2,13 +2,20 @@
 import java.time.LocalDate;
 
 
-public class Food {
+public  abstract class Food {
     private String nameFood;
     private double price;
     private int quantity;
     private LocalDate dateOfExp;
     private boolean inStock;
 
+    public Food(String nameFood, double price, int quantity, LocalDate dateOfExp, boolean inStock) {
+        this.nameFood = nameFood;
+        this.price = price;
+        this.quantity = quantity;
+        this.dateOfExp = dateOfExp;
+        this.inStock = inStock;
+    }
 
     public Food(){
 
