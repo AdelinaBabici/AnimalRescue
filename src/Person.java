@@ -9,6 +9,14 @@ public class Person extends Human {
         super();
     }
 
+    public void adopts(){
+        System.out.println(getNamePerson() + " want to adopt the dog");
+    }
+
+    @Override
+    public void dancing() {
+        System.out.println(getNamePerson() + " is dancing around");
+    }
 
     @Override
     public void beingHappy() {

@@ -12,6 +12,9 @@ public class Human {
     public void beingHappy(){
 
     }
+    public void dancing(){
+
+    }
 
     public String getNamePerson() {
         return namePerson;

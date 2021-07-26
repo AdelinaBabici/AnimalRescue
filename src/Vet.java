@@ -5,6 +5,12 @@ public class Vet extends Human {
 public Vet( String nameVet){
    super(nameVet);
 }
+
+    @Override
+    public void dancing() {
+        System.out.println(getNamePerson() + " is dancing");
+    }
+
     public Vet(){
     super();
     }
