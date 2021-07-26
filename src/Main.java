@@ -6,18 +6,18 @@ public class Main {
         Person person = new Person();
         Dog dog = new Dog();
         Vet vet = new Vet();
-        Animal animal = new Animal();
+    //  Animal animal = new Animal();
         Food food = new Food();
         Activity activity = new Activity();
         Game game = new Game();
 
-        animal.setNameAnimal("Azor");
+    /*    animal.setNameAnimal("Azor");
         animal.setAge(8);
         animal.setHealthLvl(9);
         animal.setHungerLvl(4);
         animal.setFoodFav("beef");
         animal.setWellnessLvl(8);
-        animal.setWellnessLvl(9);
+        animal.setWellnessLvl(9);*/
 
         person.setNamePerson("Luiza");
         person.setAmount(20);
@@ -47,7 +47,7 @@ public class Main {
         game.setVet(vet);
         System.out.println(game.toString());
 
-        System.out.println(animal.getNameAnimal() + " are " + animal.getAge() + " ani");
+      //  System.out.println(animal.getNameAnimal() + " are " + animal.getAge() + " ani");
 
         dog.setNameAnimal("Rex");
         dog.setColor("Brown");

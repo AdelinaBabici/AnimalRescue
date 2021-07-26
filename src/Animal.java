@@ -1,4 +1,4 @@
-public class Animal {
+public abstract class Animal {
 
     private String nameAnimal;
     private int age;
@@ -35,9 +35,10 @@ public class Animal {
         this.color  = color;
         this.age = age;
     }
-    public void eating(){}
-    public void sleeping(){}
-    public void running(){}
+    public abstract void eating();
+    public abstract void sleeping();
+    public abstract void running();
+    public abstract void speak();
 
     public String getNameAnimal() {
         return nameAnimal;
@@ -94,52 +95,6 @@ public class Animal {
     public void setWellnessActivity(String wellnessActivity) {
         this.wellnessActivity = wellnessActivity;
     }
-    /*public String getNameAnimal(){
-        return nameAnimal;
-    }
-    public void setNameAnimal(String nameAnimal){
-       this.nameAnimal = nameAnimal;
-    }
-    public int getAge(){
-        return age;
-    }
-    public int setAge(int age){
-        return age;
-    }
 
-    public int getHealthLvl(){
-        return healthLvl;
-    }
-    public int setHealthLvl(int healthLvl){
-        return healthLvl;
-    }
-
-    public int getHungerLvl(){
-        return hungerLvl;
-    }
-    public int setHungerLvl(int hungerLvl){
-        return hungerLvl;
-    }
-
-    public int getWellnessLvl(){
-        return wellnessLvl;
-    }
-    public int setWellnessLvl(int wellnessLvl){
-        return wellnessLvl;
-    }
-
-    public String getFoodFav(){
-        return foodFav;
-    }
-    public String setFoodFav(String foodFav){
-        return foodFav;
-    }
-
-    public String getWellnessActivity(){
-        return wellnessActivity;
-    }
-    public String setWellnessActivity(String wellnessActivity){
-        return wellnessActivity;
-    }*/
 
 }

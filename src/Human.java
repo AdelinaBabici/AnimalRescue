@@ -1,4 +1,4 @@
-public class Human {
+public abstract class Human {
 
     private String namePerson;
     public Human(String namePerson){
@@ -9,12 +9,8 @@ public class Human {
 
     }
 
-    public void beingHappy(){
-
-    }
-    public void dancing(){
-
-    }
+    public abstract void beingHappy();
+    public abstract void dancing();
 
     public String getNamePerson() {
         return namePerson;
