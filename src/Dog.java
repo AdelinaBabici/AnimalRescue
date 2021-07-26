@@ -1,7 +1,17 @@
 public class Dog extends Animal{
 
-    private Dog(String nameAnimal, int age, int healthLvl, int hungerLvl, int wellnessLvl, String foodFav, String wellnessActivity){
-        super(nameAnimal, age, healthLvl, hungerLvl, wellnessLvl, foodFav, wellnessActivity);
+    public Dog(){}
+    public Dog(String nameAnimal){
+        super(nameAnimal);
     }
 
+    @Override
+    public void eating() {
+        System.out.println(getNameAnimal() + " is eating.");
+    }
+
+    @Override
+    public String toString() {
+        return "Dog " + this.getNameAnimal();
+    }
 }
