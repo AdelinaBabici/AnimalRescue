@@ -11,7 +11,7 @@ public class LittleGirl extends Person{
     }
 
     public void playWithDog(){
-        System.out.println("fetita se juca cu mingea cu el in gradina.");
+        System.out.print("fetita se juca cu mingea cu el in gradina ");
     }
     public void fallInLove(){
 
@@ -25,7 +25,7 @@ public class LittleGirl extends Person{
         System.out.print("Intr-o zi fetita l-a dus la veterniar, care ");
     }
     public void takeForAWalk(){
-        System.out.print(" il scotea la plimbare. ");
+        System.out.print(" il scotea la plimbare ");
     }
     public void doHomework(){
         System.out.print(", fetita facea teme");

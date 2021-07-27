@@ -80,6 +80,10 @@ public class Main {
         Vet vet1 = new Vet();
         VetAssistant vetAssistant = new VetAssistant();
         WetFood wetFood = new WetFood();
+        Desk desk = new Desk();
+        Park park = new Park();
+        Yard yard = new Yard();
+        Vaccine vaccine = new Vaccine();
 
 
         littleGirl.setAge(7);
@@ -97,6 +101,18 @@ public class Main {
         labrador.setWellnessLvl(3);
         vetAssistant.setAttitude("draguta");
         vetAssistant.setSpecialization("asistenta");
+        desk.setColor("alb");
+        desk.setFurniture("scaunul de birou");
+        desk.setComfortLvLOfFurniture(9);
+        desk.setAccessories("lampii");
+        park.setType("parcul municipal");
+        park.setGreenSpace("multi copaci");
+        park.setDecoration("carari.");
+        yard.setSize(7);
+        yard.setToys(" ursuleti.");
+        vaccine.setType("antirabic");
+        vaccine.setName("Nobivac® Rabies");
+        vaccine.setPharmaceuticalForm("suspensie injectabila");
 
 
         System.out.println("Intr-o zi, o fetita mica de " + littleGirl.getAge() + " ani, cu par " + littleGirl.getHairColor() + " si " + littleGirl.getLoveAnimals() + " a intrat impreuna cu tatal ei " + father.getHeight() + "intr-un adapost de animale, pentru a adopta un animal.");
@@ -111,6 +127,7 @@ public class Main {
         labrador.play();
         littleGirl.takeDogToVet();
         vet.administerVaccine();
+        System.out.println(" (de exemplu, a primit vaccinul " + vaccine.getType() + " " + vaccine.getName() + " " + vaccine.getPharmaceuticalForm() + ") ");
         vet.disinfestation();
         System.out.println("Catelul a fost " + labrador.getFearLvl() + " si inainte ca acesta sa ii aplice tratamentul medical, dar dupa ce a primit tratamentul, ");
         labrador.setFearLvl(10);
@@ -129,11 +146,14 @@ public class Main {
         labrador.wakeUp();
         littleGirl.feedTheDog();
         littleGirl.takeForAWalk();
+        System.out.print(" in " + park.getType() + " care are " + park.getGreenSpace() +  " si " + park.getDecoration());
         labrador.sleep();
         littleGirl.doHomework();
+        System.out.print(" la biroul " + desk.getColor() + " stand pe " + desk.getFurniture() + desk.getComfortLvLOfFurniture() + " la lumina " + desk.getAccessories());
         System.out.println(" ");
         labrador.wakeUp();
         littleGirl.playWithDog();
+        System.out.print(yard.getSize() + " unde se gasesc multi " + yard.getToys());
         System.out.print("Seara ");
         littleGirl.takeForAWalk();
         labrador.eat();
