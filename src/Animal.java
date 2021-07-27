@@ -4,11 +4,11 @@ public abstract class Animal {
     private int age;
     private int healthLvl;
     private int hungerLvl;
-    private int wellnessLvl;
+    protected int wellnessLvl;
     private String foodFav;
     private String wellnessActivity;
 
-    private int weight;
+    protected int weight;
     private String color;
 
     public int getWeight() {
@@ -30,14 +30,16 @@ public abstract class Animal {
     public Animal(){
 
     }
-    public Animal(String nameAnimal, String color, int age){
+    public Animal(String nameAnimal, String color, int age, int weight){
         this.nameAnimal = nameAnimal;
         this.color  = color;
         this.age = age;
+        this.weight = weight;
     }
-    public abstract void eating(DogFood dogFood);
-    public abstract void sleeping();
-    public abstract void running();
+    public abstract void eat(DogFood dogFood);
+    public abstract void eat();
+    public abstract void sleep();
+    public abstract void run();
     public abstract void speak();
 
     public String getNameAnimal() {

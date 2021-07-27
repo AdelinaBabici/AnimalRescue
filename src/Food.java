@@ -8,17 +8,29 @@ public  abstract class Food {
     private int quantity;
     private LocalDate dateOfExp;
     private boolean inStock;
+    private int calorieIntake;
 
-    public Food(String nameFood, double price, int quantity, LocalDate dateOfExp, boolean inStock) {
+
+
+    public Food(String nameFood, double price, int quantity, LocalDate dateOfExp, boolean inStock, int calorieIntake) {
         this.nameFood = nameFood;
         this.price = price;
         this.quantity = quantity;
         this.dateOfExp = dateOfExp;
         this.inStock = inStock;
+        this.calorieIntake = calorieIntake;
     }
 
     public Food(){
 
+    }
+
+    public int getCalorieIntake() {
+        return calorieIntake;
+    }
+
+    public void setCalorieIntake(int calorieIntake) {
+        this.calorieIntake = calorieIntake;
     }
 
     public String getNameFood() {

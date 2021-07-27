@@ -51,27 +51,98 @@ public class Main {
         dogFood.setPrice(30);
         dogFood.setQuantity(40);
 
-        dog.eating(dogFood);
+     //   dog.eat(dogFood);
 
 
         game.setDog(dog);
-        System.out.println(game.getDog());
+   //     System.out.println(game.getDog());
         game.setPerson(person);
         game.setVet(vet);
-        System.out.println(game.toString());
+   //     System.out.println(game.toString());
 
       //  System.out.println(animal.getNameAnimal() + " are " + animal.getAge() + " ani");
 
         dog.setNameAnimal("Rex");
         dog.setColor("Brown");
 
-        dog.sleeping();
-        dog.running();
+   //     dog.sleep();
+  //      dog.run();
 
-      vet.beingHappy();
-      vet.treating();
+  //    vet.isHappy();
+  //    vet.treating();
 
-      person.beingHappy();
+   //   person.isHappy();
+
+//Animal rescue project
+        LittleGirl littleGirl = new LittleGirl();
+        Father father = new Father();
+        Labrador labrador = new Labrador();
+        Vet vet1 = new Vet();
+        VetAssistant vetAssistant = new VetAssistant();
+        WetFood wetFood = new WetFood();
+
+
+        littleGirl.setAge(7);
+        littleGirl.setHairColor("roscat");
+        littleGirl.setLoveAnimals("iubitoare de animale");
+        father.setHeight("inalt");
+        labrador.setRace("corcitura de labrador");
+        labrador.setStateOfMind("foarte nefericit");
+        labrador.setCheckWeight("slab");
+        labrador.setDesireToEat("nu voia sa manance");
+        labrador.setFearLvl(8);
+        labrador.setAge(4);
+        labrador.setWeight(25);
+        labrador.setEnergyLvl(8);
+        labrador.setWellnessLvl(3);
+        vetAssistant.setAttitude("draguta");
+        vetAssistant.setSpecialization("asistenta");
+
+
+        System.out.println("Intr-o zi, o fetita mica de " + littleGirl.getAge() + " ani, cu par " + littleGirl.getHairColor() + " si " + littleGirl.getLoveAnimals() + " a intrat impreuna cu tatal ei " + father.getHeight() + "intr-un adapost de animale, pentru a adopta un animal.");
+        littleGirl.fallInLove();
+        System.out.println(",care era o " + labrador.getRace() + " .");
+        System.out.println("Cainele, era " + labrador.getStateOfMind() + " , " + labrador.getCheckWeight() + " si " + labrador.getDesireToEat() + " .");
+        littleGirl.adopts();
+        System.out.print("Cainele a fost " + labrador.getFearLvl() + " la inceput, asa ca ");
+        littleGirl.feedTheDog();
+        System.out.println(" Dupa catva timp, catelul, in varsta de " + labrador.getAge() + " ani " + " a inceput " + labrador.getWeightControl() + " si " + labrador.getEnergyLvl());
+        System.out.print("Fetita a inceput ");
+        labrador.play();
+        littleGirl.takeDogToVet();
+        vet.administerVaccine();
+        vet.disinfestation();
+        System.out.println("Catelul a fost " + labrador.getFearLvl() + " si inainte ca acesta sa ii aplice tratamentul medical, dar dupa ce a primit tratamentul, ");
+        labrador.setFearLvl(10);
+        System.out.println(labrador.getFearLvl());
+        System.out.print("Noroc cu " + vetAssistant.getSpecialization() + " " + vetAssistant.getAttitude() + " care ");
+        vetAssistant.pet();
+        vetAssistant.comfort();
+        System.out.println(" in timpul tratamentului, calmandu-l. ");
+        wetFood.setCalorieIntake(300);
+        System.out.print("Dupa ce fetita l-a hranit pe catel cu hrana umeda pentru ceva timp, acesta ");
+        if(wetFood.getCalorieIntake() > 200){
+            labrador.weight = labrador.weight + 10;
+            System.out.println(" s-a ingrasat cu 10 kg-are acum " + labrador.weight + ", asa ca a trebuit sa ii schimbe hrana cu un tip de hrana speciala pentru catei, care era mai putin calorica. ");
+        }
+        System.out.println("Pentru a-l face sa slabeasca, fetita avea rutina aceasta cu catelul, aproape zilnic: ");
+        labrador.wakeUp();
+        littleGirl.feedTheDog();
+        littleGirl.takeForAWalk();
+        labrador.sleep();
+        littleGirl.doHomework();
+        System.out.println(" ");
+        labrador.wakeUp();
+        littleGirl.playWithDog();
+        System.out.print("Seara ");
+        littleGirl.takeForAWalk();
+        labrador.eat();
+        labrador.sleep();
+        labrador.balanceLifeStyle();
+
+
+
+
 
     }
 }

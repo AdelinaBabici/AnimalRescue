@@ -1,6 +1,7 @@
 public abstract class Human {
 
     private String namePerson;
+
     public Human(String namePerson){
         this.namePerson = namePerson;
     }
@@ -9,8 +10,8 @@ public abstract class Human {
 
     }
 
-    public abstract void beingHappy();
-    public abstract void dancing();
+    public abstract void isHappy();
+    public abstract void enter();
 
     public String getNamePerson() {
         return namePerson;

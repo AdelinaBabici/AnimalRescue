@@ -1,24 +1,22 @@
 import java.time.LocalDate;
 
-public class DogFood extends Food{
+public class WetFood extends Food{
 
-
-    public DogFood(String nameFood, double price, int quantity, LocalDate dateOfExp, boolean inStock, int calorieIntake) {
+    public WetFood(String nameFood, double price, int quantity, LocalDate dateOfExp, boolean inStock, int calorieIntake) {
         super(nameFood, price, quantity, dateOfExp, inStock, calorieIntake);
     }
 
-    public DogFood() {
+    public WetFood() {
     }
-
 
     @Override
     public int getCalorieIntake() {
+
         return super.getCalorieIntake();
     }
 
     @Override
     public void setCalorieIntake(int calorieIntake) {
-
         super.setCalorieIntake(calorieIntake);
     }
 
@@ -70,10 +68,5 @@ public class DogFood extends Food{
     @Override
     public void setInStock(boolean inStock) {
         super.setInStock(inStock);
-    }
-
-    @Override
-    public String toString() {
-        return "DogFood{}";
     }
 }

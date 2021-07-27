@@ -10,16 +10,16 @@ public class Person extends Human {
     }
 
     public void adopts(){
-        System.out.println(getNamePerson() + " want to adopt the dog");
+        System.out.println("Fetita l-a adoptat si i-a pus un nume frumos.");
     }
 
     @Override
-    public void dancing() {
-        System.out.println(getNamePerson() + " is dancing around");
+    public void enter() {
+        System.out.println(getNamePerson() + " is entering");
     }
 
     @Override
-    public void beingHappy() {
+    public void isHappy() {
         System.out.println(getNamePerson() + " is being happy about adoption");
     }
 

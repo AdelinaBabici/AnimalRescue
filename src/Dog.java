@@ -1,8 +1,8 @@
 public class Dog extends Animal{
 
     public Dog(){}
-    public Dog(String nameAnimal, String color, int age){
-        super(nameAnimal, color, age);
+    public Dog(String nameAnimal, String color, int age, int weight){
+        super(nameAnimal, color, age, weight);
     }
 
     @Override
@@ -11,7 +11,7 @@ public class Dog extends Animal{
     }
 
     @Override
-    public void eating(DogFood dogFood) {
+    public void eat(DogFood dogFood) {
         int weight = getWeight() + 5;
         int hungerLvl = getHungerLvl() -2;
         int healthLvl = getHealthLvl() + 10;
@@ -20,12 +20,17 @@ public class Dog extends Animal{
     }
 
     @Override
-    public void sleeping() {
-        System.out.println(getNameAnimal() + " is sleeping");
+    public void sleep() {
+        System.out.print(" catelul se culca");
     }
 
     @Override
-    public void running() {
+    public void eat() {
+
+    }
+
+    @Override
+    public void run() {
         System.out.println(getNameAnimal() + " is running");
     }
 

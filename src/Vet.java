@@ -1,14 +1,19 @@
 public class Vet extends Human {
-    private String nameVet;
     private String specialization;
-
-public Vet( String nameVet){
-   super(nameVet);
+public Vet( String nameVet, String specialization){
+   super(nameVet); this.specialization = specialization;
 }
 
+    public void administerVaccine(){
+        System.out.print(" i-a facut vaccinurile periodice");
+    }
+    public void disinfestation(){
+        System.out.print(" si deparazitare.");
+    }
+
     @Override
-    public void dancing() {
-        System.out.println(getNamePerson() + " is dancing");
+    public void enter() {
+        System.out.println(getNamePerson() + " is entering the room");
     }
 
     public Vet(){
@@ -20,7 +25,7 @@ public Vet( String nameVet){
     }
 
     @Override
-    public void beingHappy() {
+    public void isHappy() {
         System.out.println(getNamePerson() + " is being happy");
     }
 
